@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Services</title>
+
+    <style>
+        body {
+            background-image: url("images/background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: "Times New Roman", sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service {
+            background: rgba(30, 94, 30, 0.9);
+            padding: 20px;
+            max-width: 280px;
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .service:hover,
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 10px;
+            border-radius: 10px;
+            width: 280px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            max-width: 500px;
+            padding: 12px;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="services">
+        <h2>My Services</h2>
+
+        <div class="services-container">
+
+            <div class="service">
+                <h3>Logo Design</h3>
+                <p>Professional logo design for brands.</p>
+            </div>
+
+            <div class="service">
+                <h3>Flyer Design</h3>
+                <p>Creative flyers for events and promotions.</p>
+            </div>
+
+            <div class="service">
+                <h3>Website Design</h3>
+                <p>Modern and responsive websites.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item">
+                <img src="images/design1.jpg" alt="Design 1">
+                <p>Flyer Design</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/design2.jpg" alt="Design 2">
+                <p>Logo Design</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/design3.jpg" alt="Design 3">
+                <p>Banner Design</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: tosinidowu910@gmail.com</p>
+
+        <p>WhatsApp: +2349078525884</p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <br><br>
+
+            <input type="email" placeholder="Your Email" required>
+            <br><br>
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="social">
+        <h2>Follow Me</h2>
+
+        <p>
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a>
+        </p>
+    </section>
+
+    <a href="index.html" class="back-home">🏠 Back to Home</a>
+
+</body>
+</html>
