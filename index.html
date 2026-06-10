@@ -15,7 +15,14 @@
             text-align: center;
             padding: 20px;
             margin: 0;
-            background-color: #f4f4f5;
+
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            color: white;
         }
 
         nav {
@@ -45,7 +52,12 @@
         }
 
         h2 {
-            color: #333;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
         .profile-pic {
@@ -53,7 +65,7 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #ff6637;
+            border: 4px solid white;
             margin: 20px 0;
         }
 
@@ -65,11 +77,17 @@
         }
 
         .service {
-            background: white;
+            background: rgba(255,255,255,0.9);
+            color: black;
             padding: 20px;
             width: 250px;
             border-radius: 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
         }
 
         button {
@@ -82,6 +100,19 @@
             cursor: pointer;
         }
 
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
         section {
             margin-top: 40px;
         }
@@ -89,7 +120,6 @@
         footer {
             margin-top: 40px;
             padding: 15px;
-            color: #333;
         }
     </style>
 </head>
@@ -148,6 +178,18 @@
 
     </section>
 
+    <section id="portfolio">
+
+        <h2>My Portfolio</h2>
+
+        <div class="gallery">
+            <img src="design1.jpg" alt="Design 1">
+            <img src="design2.jpg" alt="Design 2">
+            <img src="design3.jpg" alt="Design 3">
+        </div>
+
+    </section>
+
     <section id="contact">
 
         <h2>Contact Me</h2>
@@ -156,11 +198,11 @@
             <button>Chat on WhatsApp</button>
         </a>
 
-        <p>Email: tosinidowu910@gmail.com</p>
-
-        <br>
+        <br><br>
 
         <button onclick="showMessage()">Hire Me</button>
+
+        <p>Email: tosinidowu910@gmail.com</p>
 
     </section>
 
